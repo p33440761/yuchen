@@ -138,8 +138,8 @@ $rows = $pdo->query($p_sql)->fetchAll();
             pid,
             qty
         }, function(data) {
-
-            console.log(data);
+            showCartCount(data);
+            // console.log(data);
         }, 'json');
     })
 </script>
